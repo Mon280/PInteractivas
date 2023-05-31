@@ -1,0 +1,33 @@
+.color{ background-color: #73A9AD; height: 90px; }
+.centrado{text-align: center;}
+.posTitulo{position: relative; right: 420px;}
+
+@font-face {
+    font-family: caveat;
+    src: url(Caveat.ttf);
+}
+.caveat{font-family:caveat; font-size: 70pt;}
+.caveat2{font-family:caveat; font-size: 30pt;}
+.caveat3{font-family:caveat; font-size: 50pt;}
+.caveat4{font-family:caveat; font-size: 20pt;}
+.imgRedonda{height: 200px; width: 300px; background-repeat: no-repeat;background-position: 50%;border-radius: 50%;background-size: 100% auto;}
+.text{font-family: Arial, Helvetica, sans-serif;}
+
+
+.fin{ background-color: #73A9AD; height: 150px ; text-align: center;}
+.posTarjetaH{position: relative; left: 120px; top: 40px}
+.txtTarjetaH{text-align: center;}
+
+.centrarImg{display: block; margin: auto; width: 400px; height: 300px; border-radius: 2%}
+.imgInferiores{margin: auto; width: 429px; height: 300px; padding-left: 20px;border-radius: 2%; border-bottom: 2%; border-left: 2%; }
+
+.normalTxt{font-size: 20px; text-align: justify; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+.estiloBtn{width: 100%; height: 55px; border: none;
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 25px;}
