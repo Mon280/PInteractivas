@@ -9,9 +9,9 @@ use App\Http\Controllers\listaImgController;
 use App\Http\Controllers\NuevoAController;
 use App\Models\Articulos;
 use App\Models\User;
-use App\Exports\UsersExport;
 use Maatwebsite\Excel\Facades\Excel;
-
+use App\Exports\ArticulosExport;
+use App\Exports\ArticulosImport;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,7 +23,9 @@ use Maatwebsite\Excel\Facades\Excel;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('/exportar', 'EjemploController@export');
+Route::get('articulos/export', 'EjemploController@export'); //Export excel
+Route::post('articulos/import', 'EjemploController@import'); //Importar excel
+
 
 Route::get('/', function () {
     return view('welcome');

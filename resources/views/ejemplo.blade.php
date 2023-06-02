@@ -69,6 +69,9 @@
         <div class="container">
             <a href="nuevoA" class="btn btn-dark">Crear nuevo artículo</a>  
         </div><br><br>
+        <div class="container">
+            <a href="{{ url('articulos/export') }}" class="btn btn-dark">Descargar excel</a>  
+        </div><br><br>
         @endif
         <div class="container">
             <div class="row" style="text-align:center">
@@ -144,6 +147,25 @@
         <div class="container">
             <a href="/exportar" class="btn btn-dark">Exportar</a>  
         </div><br>-->
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <form action="{{url('articulos/import')}}" method="post" enctype="multipart/form-data">
+                            @csrf
+                            <div class="clo-md-6">
+                                <input type="file" name="documento">
+                            </div><br>
+                            <div class="clo-md-6">
+                                <button class="btn btn-dark" type="submit">Importar</button>
+                            </div>
+                        </form>
+                    </div> 
+                </div> 
+            </div> 
+        </div><br>
+
         <div class="container">
             <a href="listaImg" class="btn btn-dark">Ver lista de imagenes</a>  
         </div><br><br><br><br>

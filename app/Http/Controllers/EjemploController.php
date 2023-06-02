@@ -5,8 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Articulos;
 use App\Models\User;
-use App\Exports\UsersExport;
-use Maatwebsite\Excel\Facades\Excel;
+use App\Exports\ArticulosExport;
+use App\Imports\ArticulosImport;
+use Excel;
 use PDF;
 
 
@@ -19,6 +20,12 @@ class EjemploController extends Controller
         $dato=10;
         return view('ejemplo')->with('articulos',$articulos)->with('users',$users);
 
+    }
+
+    public function import(Request $req) 
+    {
+        Excel::import(new ArticulosImport, 'articulos.xlsx');
+        return redirect('/')->with('success', 'All good!');
     }
 
     public function export(){

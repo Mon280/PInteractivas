@@ -2,7 +2,7 @@
 
 namespace App\Exports;
 
-use App\User;
+use App\Models\Articulos;
 use DB;
 use Maatwebsite\Excel\Concerns\FromCollection;
 use Maatwebsite\Excel\Concerns\WithHeadings;
